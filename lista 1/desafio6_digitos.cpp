@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 
 using namespace std;
 
@@ -23,17 +22,11 @@ bool contdigit(int a){
 }
 
 int somaNum (int a){
-	int y;
+	int y = 0;
 	do{
 		y = y + a % 10;
 		a = a / 10;
-		cout << " armazena: " << y << endl;
-		Sleep (1500);
-		cout << " num: " << a << endl;
-		Sleep (1500);
 	}while(a != 0);
-	Sleep (5000);
-	
 	return y;
 }
 
